@@ -19,6 +19,7 @@ type userData struct {
 	FirstName        string
 	LastName         string
 	Phone            string
+	IsPhoneVerified  bool
 	IdentifyDocument string
 	Latitude         float32
 	Longitude        float32
@@ -66,6 +67,7 @@ func main() {
 			FirstName:        line[1],
 			LastName:         line[2],
 			Phone:            line[3],
+			IsPhoneVerified:  isPhoneVerified,
 			IdentifyDocument: line[4],
 			Latitude:         latitude32,
 			Longitude:        longitude32,
